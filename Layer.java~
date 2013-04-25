@@ -164,9 +164,9 @@ public class Layer {
 	public double[] feedForward ( double[] inps) {
 		for ( int n = 0; n < numberOfNeurons ; n ++ ) {
 			currentOutputs[n] = neurons[n].output(inps);
-			/*System.out.println("number of nuerons in output layer is "+n);
+			System.out.println("number of nuerons in output layer is "+n);
 			System.out.println("The input being fed to the output layer neuron is "+inps);
-			System.out.println("The cureentoutputs at output layer is being calculated as "+currentOutputs[n]);*/
+			System.out.println("The cureentoutputs at output layer is being calculated as "+currentOutputs[n]);
 		}
 		return currentOutputs;
 	}
